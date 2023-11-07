@@ -157,8 +157,8 @@ public class Datatesting {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[3]" ))).click();
 
 		Thread.sleep(2000);
-
 		
+		System.out.println("Go to Goat Brain-4");
     	
     	WebElement section = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[text()='335'])[1]")));
     	if (section.isEnabled() && section.isDisplayed()) {
@@ -218,7 +218,7 @@ public class Datatesting {
 
 		Thread.sleep(2000);
 
-		
+		System.out.println("Go to MTB-12");
 
 		WebElement section = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[text()='301'])[1]")));
     	if (section.isEnabled() && section.isDisplayed()) {
@@ -271,7 +271,7 @@ public class Datatesting {
 
 		Thread.sleep(2000);
 
-		
+		System.out.println("Go to MTB-18");
 
 		WebElement section1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[text()='238'])[1]")));
     	if (section1.isEnabled() && section1.isDisplayed()) {
