@@ -206,15 +206,15 @@ public class Datatesting {
   public void mouseBrain() throws InterruptedException {
 
 	  WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[2]/td[1]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[1]" ))).click();
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[2]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[4]/td[2]" ))).click();
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[4]/td[3]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[5]/td[3]" ))).click();
 
 		Thread.sleep(2000);
 
@@ -259,15 +259,15 @@ public class Datatesting {
 
 		
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[2]/td[1]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[1]" ))).click();
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[2]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[4]/td[2]" ))).click();
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[5]/td[3]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[6]/td[3]" ))).click();
 
 		Thread.sleep(2000);
 
