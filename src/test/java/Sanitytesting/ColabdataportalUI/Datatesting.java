@@ -50,7 +50,7 @@ public class Datatesting {
 	{
 		
 		  DesiredCapabilities dc = DesiredCapabilities.chrome();
-	        URL url = new URL("http://172.20.23.92:4444/wd/hub");
+	        URL url = new URL("http://172.20.23.92:4443/wd/hub");
 	        driver = new RemoteWebDriver(url, dc);
 	
 	       
@@ -144,17 +144,17 @@ public class Datatesting {
 
 	  
 
-	  WebDriverWait wait = new WebDriverWait(driver, 10);
+	  WebDriverWait wait = new WebDriverWait(driver, 30);
 
-	  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[1]/td[1]" ))).click();
+	  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()=' Goat ']" ))).click();
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[2]/td[2]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()=' Brain ']" ))).click();
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[3]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[text()=' 29']" ))).click();
 
 		Thread.sleep(2000);
 		
@@ -205,16 +205,16 @@ public class Datatesting {
 
   public void mouseBrain() throws InterruptedException {
 
-	  WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[1]" ))).click();
+	  WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()=' Mouse ']" ))).click();
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[4]/td[2]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()=' Brain ']" ))).click();
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[5]/td[3]" ))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[text()=' 54']" ))).click();
 
 		Thread.sleep(2000);
 
@@ -253,59 +253,44 @@ public class Datatesting {
 
 	    
 
-	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Back']" ))).click();
-
-		Thread.sleep(2000);
-
-		
-
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[3]/td[1]" ))).click();
-
-		Thread.sleep(2000);
-
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[4]/td[2]" ))).click();
-
-		Thread.sleep(2000);
-
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[6]/td[3]" ))).click();
-
-		Thread.sleep(2000);
-
-		System.out.println("Go to MTB-18");
-
-		WebElement section1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[text()='238'])[1]")));
-    	if (section1.isEnabled() && section1.isDisplayed()) {
-    	    section1.click();
-    	    System.out.println("section is selected");
-    	} else {
-    	    System.out.println("section is not selected");
-    	}
-    	Thread.sleep(3000);
-    	
-    
-    	WebElement hd1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='View High Resolution Image']")));
-    	if (hd1.isEnabled() && hd1.isDisplayed()) {
-    	    hd1.click();
-    	    System.out.println("High resolution page is opened");
-    	} else {
-    	    System.out.println("High resolutin page is not opened");
-    	}
-    	Thread.sleep(5000);
-    	
-    
-    	WebElement back1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='back']")));
-     	if (back1.isEnabled() && back1.isDisplayed()) {
-     	    back1.click();
-     	    System.out.println("Back to viewer page");
-     	} else {
-     	    System.out.println("Back to viewer page");
-     	}
-     	Thread.sleep(6000);
-     	
-        System.out.println("********************************Hd page validation of MTB-18 done*****************************");
-	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Back']" ))).click();
-
-		Thread.sleep(2000);
+//	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[text()=' 62']" ))).click();
+//
+//		Thread.sleep(3000);
+//		System.out.println("Go to MTB-18");
+//
+//		WebElement section1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[text()='238'])[1]")));
+//    	if (section1.isEnabled() && section1.isDisplayed()) {
+//    	    section1.click();
+//    	    System.out.println("section is selected");
+//    	} else {
+//    	    System.out.println("section is not selected");
+//    	}
+//    	Thread.sleep(3000);
+//    	
+//    
+//    	WebElement hd1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='View High Resolution Image']")));
+//    	if (hd1.isEnabled() && hd1.isDisplayed()) {
+//    	    hd1.click();
+//    	    System.out.println("High resolution page is opened");
+//    	} else {
+//    	    System.out.println("High resolutin page is not opened");
+//    	}
+//    	Thread.sleep(5000);
+//    	
+//    
+//    	WebElement back1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='back']")));
+//     	if (back1.isEnabled() && back1.isDisplayed()) {
+//     	    back1.click();
+//     	    System.out.println("Back to viewer page");
+//     	} else {
+//     	    System.out.println("Back to viewer page");
+//     	}
+//     	Thread.sleep(6000);
+//     	
+//        System.out.println("********************************Hd page validation of MTB-18 done*****************************");
+//	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@title='Back']" ))).click();
+//
+//		Thread.sleep(2000);
 
   }
   private void Seriesset_API()
@@ -356,14 +341,5 @@ public class Datatesting {
   }
 
 	
-
-
-
-	
-
-
-
-
-
 }
 
